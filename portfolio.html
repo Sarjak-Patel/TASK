@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2018/05/Gradient-Round-Up-Featured-Image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .container{
+        width: 95%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    /* container end */
+    .container header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 0%;
+    }
+    /* header end */
+    .container header .i-details{
+        height: 7vh;
+        width: 10%;
+        border: 3px solid black;
+        transition: all 1s linear;
+    }
+    .container header .i-details a{
+        width: 100%;
+        height: inherit;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container header .i-details:hover{
+        transform: scale(104%);
+        background: plum;
+        box-shadow: 0 0 20px 5px purple;
+    }
+    /* details end */
+    .container header nav{
+        width: 48%;
+        display: flex;
+        justify-content: end;
+    }
+    .container header nav a{
+        text-decoration: none;
+        color: black;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 23px;
+        font-weight: 900;
+        cursor:pointer;
+        padding-left: 50px;
+        transition: all linear 0.5s;
+    }
+    .container header nav a:hover{
+        transform: scale(108%);
+    }
+    /* nav end */
+    .container .pr{
+        padding-top: 20px;
+        display: flex;
+        height: 90vh;
+    }
+    .container .pr-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+    }
+    .container .pr-left p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        text-align: justify;
+    }
+    .container .pr-left h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 67px;
+        font-weight: 800;
+        text-transform: capitalize;
+        text-align: justify;
+        position: relative;
+        transition: all 0.5s linear;
+        width: fit-content;
+        overflow: hidden;
+    }
+    .container .pr-left h3::before{
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        transition: all 1.5s linear;
+    }
+    .container .pr-left h3:hover::before{
+        left: 0;
+        letter-spacing: 2px;
+    }
+    .container .pr-left h3:hover{
+        -webkit-text-stroke: 3px black;
+        color: transparent;
+        text-shadow: 4px -3px 0px black,2px -2px 0px white;
+        letter-spacing: 2px;
+    }
+    /* pr-left end */
+    .container .pr-right{
+        width: 50%;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pr-img{
+        width: 400px;
+        height: 400px;
+        position: relative;
+    }
+    .pr-img img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: scaleX(1.09) scaleY(1.2);
+    }
+    .pr-img .bx{
+        z-index: -1;
+        border-radius: 100%;
+        position: absolute;
+        top: 41px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        outline: 1px solid black;
+        border: 1px solid black;
+        box-shadow: inset 0px 0px 15px 5px rgb(5, 5, 5);
+    }
+    /* img end */
+    .container .ab h3{
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 10vh;
+    }
+    /* about end */
+</style>
+<body>
+    <!-- container start -->
+    <div class="container">
+        <!-- header strat -->
+        <header>
+            <!-- Resume start -->
+            <div class="i-details">
+                <a href="#">Resume</a>
+            </div>
+            <!-- Resume end -->
+            <!-- nav start -->
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">My Work</a>
+                <a href="#cnt">contect</a>
+            </nav>
+            <!-- nav end -->
+        </header>
+        <!-- header end -->
+        <!-- profile start -->
+        <div class="pr">
+            <!-- pr-left start -->
+            <div class="pr-left">
+                <p>
+                    hii, my name is 
+                </p>
+                <h3>sarjak</h3>
+                <h3>i build this web.</h3>
+                <p>
+                    i am backend web devloper.
+                </p>
+            </div>
+            <!-- pr-left end -->
+            <!-- pr-right start -->
+            <div class="pr-right">
+                <div class="pr-img">
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/man-6530466-5823045.png?f=webp" alt="my-img">
+                    <div class="bx"></div>
+                </div>
+            </div>
+            <!-- pr-right end -->
+        </div>
+        <!-- profile end -->
+        <!-- about start -->
+        <div class="ab" id="about">
+            <h3>about</h3>
+        </div>
+        <!-- table start -->
+        <div class="p-details">
+            <table width="40%" border="1px" cell-spacing="1" cell-padding="5px">
+                <tr>
+                    <td>Scool</td>
+                    <td>10th</td>
+                    <td>49.65%</td>
+                </tr>
+                <tr>
+                    <td>Higher secondary school</td>
+                    <td>12th</td>
+                    <td>50.45%</td>
+                </tr>
+                <tr>
+                    <td>University</td>
+                    <td>6sem</td>
+                    <td>70%</td>
+                </tr>
+            </table>
+            <!-- table and -->
+        </div>
+        <!-- about end -->
+    </div>
+    <!-- container end -->
+    <!-- Script start -->
+        <!-- script link start -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+        <!-- script link end -->
+        <!-- script content start -->
+        <script>
+            
+        </script>
+        <!-- script content end -->
+    <!-- Script end -->
+</body>
+</html>
